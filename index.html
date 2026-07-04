@@ -1,0 +1,777 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Optimization -->
+    <title>Sudheer Sharma | Full Stack MERN Developer & AI-ML Student</title>
+    <meta name="description" content="Portfolio of Sudheer Sharma, pursuing B.Tech CSE (AI & ML) at Galgotias College. Specializing in MERN Stack, AI models, and Copywriting. Certified by Deloitte, Tata, AWS, and MongoDB." />
+    <meta name="keywords" content="Sudheer Sharma, MERN stack, Data Structures, Algorithms, AI, ML, Galgotias College, Deloitte, Tata Forage, AWS Cloud, MongoDB Certified, Copywriting" />
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>" />
+  </head>
+  <body>
+    <!-- Top Progress Indicator -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Background Grid & Glowing Orbs -->
+    <div class="bg-grid"></div>
+    <div class="bg-glow-orb orb-indigo"></div>
+    <div class="bg-glow-orb orb-cyan"></div>
+    <div class="bg-glow-orb orb-emerald"></div>
+
+    <!-- Navigation Header -->
+    <header id="header">
+      <a href="#" class="logo" id="logoLink">SUDHEER SHARMA</a>
+      
+      <div class="nav-container">
+        <nav id="navMenu">
+          <a href="#hero" class="active">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#education">Education</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#certifications">Certificates</a>
+          <a href="#github">GitHub</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        
+        <!-- Theme Selector Toggle -->
+        <div class="theme-switcher">
+          <select id="themeSelect" class="theme-select" aria-label="Select Theme">
+            <option value="system">⚙️ System</option>
+            <option value="dark">🌙 Dark</option>
+            <option value="light">☀️ Light</option>
+          </select>
+        </div>
+        
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle Menu">&#x2630;</button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="hero-parallax-wrapper">
+        <div class="hero-bg-text">DEV_PORTAL</div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-avatar-container">
+          <img src="/developer_avatar.png" alt="Sudheer Sharma" class="hero-avatar" />
+        </div>
+        <p class="hero-tag">Welcome to my portfolio</p>
+        <h1 class="hero-name">I'm <span>Sudheer Sharma</span></h1>
+        
+        <div class="hero-type-writer">
+          I am a <span id="typing-text"></span><span class="typing-cursor">|</span>
+        </div>
+        
+        <p class="hero-description">
+          Building scalable, performant web applications using the MERN stack while exploring deep analytical patterns with AI/ML. Actively solving Data Structures &amp; Algorithms problems.
+        </p>
+        <div class="hero-cta-group">
+          <a href="/documents/resume1 (2).pdf" class="btn btn-primary" id="btnResume" target="_blank" download>Download Resume</a>
+          <a href="#projects" class="btn btn-secondary" id="btnViewProjects">View Projects</a>
+          <a href="#contact" class="btn btn-secondary" id="btnContactMe">Contact Me</a>
+        </div>
+      </div>
+      <a href="#about" class="scroll-down" id="scrollIndicator" aria-label="Scroll Down">
+        <span>Scroll Down</span>
+        <svg viewBox="0 0 24 24">
+          <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+        </svg>
+      </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="reveal">
+      <h2 class="section-title">About <span>Me</span></h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <div class="college-badge">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5.89 12.5L12 15.83l6.11-3.33L12 9.17l-6.11 3.33zM12 21c-2.45 0-4.63-1.39-5.69-3.41L12 15.22l5.69 2.37C16.63 19.61 14.45 21 12 21z"/>
+            </svg>
+            <span>Galgotias College of Engineering &amp; Technology</span>
+          </div>
+          <p>
+            I am a Computer Science Engineering student specializing in <span class="highlight-text">Artificial Intelligence and Machine Learning (AI &amp; ML)</span> at Galgotias College.
+          </p>
+          <p>
+            I enjoy building responsive, scalable web applications using the MERN stack while continuously improving my problem-solving skills through Data Structures and Algorithms. I focus on backend server performance and database optimizations.
+          </p>
+          <p>
+            Additionally, I have completed a <span class="highlight-text">Content Writing Internship at InAmigos Foundation</span>, where I honed my skills in writing, creativity, and content strategy, helping bridge technical developments with clear storytelling.
+          </p>
+        </div>
+        <div class="about-visual">
+          <div class="about-card glass-card">
+            <div class="about-stat">
+              <span class="num">300+</span>
+              <span class="label">DSA Problems Solved</span>
+            </div>
+            <div class="about-stat">
+              <span class="num">10+</span>
+              <span class="label">Projects Built</span>
+            </div>
+            <div class="about-stat">
+              <span class="num">6+</span>
+              <span class="label">Verified Certifications</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="reveal">
+      <h2 class="section-title">Internships &amp; <span>Experience</span></h2>
+      <div class="timeline">
+        
+        <!-- TATA GenAI -->
+        <div class="timeline-item">
+          <div class="timeline-badge"></div>
+          <div class="glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">GenAI Powered Data Analytics</h3>
+                <div class="timeline-org">TATA Group (via Forage Simulation)</div>
+              </div>
+              <div class="timeline-date">June 23rd, 2026</div>
+            </div>
+            <div class="timeline-content">
+              <p>
+                Successfully completed practical tasks involving GenAI data analysis. Built risk profiles, payment delinquency AI models, and automated recovery strategies.
+              </p>
+              <button class="btn-view-cert" data-cert="tata" id="certBtnTata">
+                <span>View Internship Credentials</span>
+                <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- InAmigos Foundation -->
+        <div class="timeline-item">
+          <div class="timeline-badge"></div>
+          <div class="glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Content Writing &amp; Copywriting Internship</h3>
+                <div class="timeline-org">InAmigos Foundation (IAF)</div>
+              </div>
+              <div class="timeline-date">March – April 2026</div>
+            </div>
+            <div class="timeline-content">
+              <p>
+                Successfully secured a Copywriting Internship via Internshala and completed a Content Writing Internship at InAmigos Foundation. Focused on copywriting, marketing strategies, SEO, and content optimization, accelerating personal and professional skill development.
+              </p>
+              
+              <div class="cert-btn-group" style="display: flex; gap: 1.5rem; flex-wrap: wrap; margin-top: 1rem;">
+                <button class="btn-view-cert" data-cert="internshala" id="certBtnInternshala">
+                  <span>View Selection Certificate</span>
+                  <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                </button>
+                <button class="btn-view-cert" data-cert="inamigos" id="certBtnInamigos">
+                  <span>View Completion Certificate</span>
+                  <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="reveal">
+      <h2 class="section-title">Technical <span>Skills</span></h2>
+      <div class="skills-grid">
+        
+        <!-- Category 1: Languages -->
+        <div class="skills-category languages glass-card">
+          <h3>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.6 3.39 1.83 4.33 3.56z"/>
+            </svg>
+            Languages
+          </h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info"><span>C++</span><span>90%</span></div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-value="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>C</span><span>85%</span></div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-value="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>JavaScript</span><span>88%</span></div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-value="88"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 2: Frontend -->
+        <div class="skills-category frontend glass-card">
+          <h3>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm1 18h-2v-6h2v6zm0-8h-2V7h2v5z"/>
+            </svg>
+            Frontend
+          </h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info"><span>React</span><span>88%</span></div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-value="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>HTML &amp; CSS</span><span>92%</span></div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-value="92"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Tailwind CSS</span><span>90%</span></div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-value="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Bootstrap</span><span>85%</span></div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-value="85"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 3: Backend -->
+        <div class="skills-category backend glass-card">
+          <h3>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2c-5.52 0-10 4.48-10 10s4.48 10 10 10 10-4.48 10-10-4.48-10-10-10zM9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4z"/>
+            </svg>
+            Backend
+          </h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info"><span>Node.js</span><span>90%</span></div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-value="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Express.js</span><span>92%</span></div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-value="92"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 4: Database -->
+        <div class="skills-category database glass-card">
+          <h3>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93z"/>
+            </svg>
+            Database
+          </h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info"><span>MongoDB</span><span>88%</span></div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-value="88"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 5: Tools -->
+        <div class="skills-category tools glass-card">
+          <h3>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58z"/>
+            </svg>
+            Tools &amp; IDEs
+          </h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info"><span>Git &amp; GitHub</span><span>88%</span></div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-value="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>VS Code</span><span>92%</span></div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-value="92"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Postman API</span><span>85%</span></div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-value="85"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 6: Learning -->
+        <div class="skills-category learning glass-card">
+          <h3>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm0 12.17L5.89 12 12 8.67 18.11 12 12 15.17z"/>
+            </svg>
+            Currently Learning
+          </h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info"><span>Next.js Framework</span><span>70%</span></div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-value="70"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>TypeScript</span><span>65%</span></div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-value="65"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Docker Containers</span><span>50%</span></div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-value="50"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Education Timeline -->
+    <section id="education" class="reveal">
+      <h2 class="section-title">Education <span>Timeline</span></h2>
+      <div class="timeline">
+        
+        <!-- B.Tech CSE (AI & ML) -->
+        <div class="timeline-item">
+          <div class="timeline-badge"></div>
+          <div class="glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">B.Tech in Computer Science Engineering (AI &amp; ML)</h3>
+                <div class="timeline-org">Galgotias College of Engineering &amp; Technology</div>
+              </div>
+              <div class="timeline-date">2024 – 2028</div>
+            </div>
+            <div class="timeline-content">
+              <p>
+                Specializing in Artificial Intelligence and Machine Learning courses. Studying Core Computer Science modules, Data Structures and Algorithms, and designing neural network structures.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Class XII PCM -->
+        <div class="timeline-item">
+          <div class="timeline-badge"></div>
+          <div class="glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Class XII (Senior Secondary School)</h3>
+                <div class="timeline-org">PCM (Physics, Chemistry, Mathematics)</div>
+              </div>
+              <div class="timeline-date">Completed</div>
+            </div>
+            <div class="timeline-content">
+              <p>
+                Completed secondary certification specializing in physical science, mathematics, and analytic geometry.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Class X -->
+        <div class="timeline-item">
+          <div class="timeline-badge"></div>
+          <div class="glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Class X (Secondary School)</h3>
+                <div class="timeline-org">General Science &amp; Mathematics</div>
+              </div>
+              <div class="timeline-date">Completed</div>
+            </div>
+            <div class="timeline-content">
+              <p>
+                Laid fundamental quantitative backgrounds in science, mathematics, and logical studies.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="reveal">
+      <h2 class="section-title">Featured <span>Projects</span></h2>
+      <div class="projects-grid">
+        
+        <!-- Project 1: Interactive Spider Clock -->
+        <div class="project-card glass-card">
+          <div class="project-icon">🕷️</div>
+          <h3>Interactive Spider Clock</h3>
+          <p>
+            A responsive, interactive digital clock built with customized CSS animations and DOM trackers, shifting elements reactively based on time vectors.
+          </p>
+          <ul class="project-features">
+            <li>Responsive viewport adaptations</li>
+            <li>Smooth CSS clock translations</li>
+            <li>Interactive user mouse triggers</li>
+          </ul>
+          <div class="project-tech">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/sudheersharma7906-design/Interactive-Spider-Clock" target="_blank" class="project-link">
+              <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2: Airbnb Clone -->
+        <div class="project-card glass-card">
+          <div class="project-icon">🏠</div>
+          <h3>Airbnb Clone</h3>
+          <p>
+            Full-featured mock portal simulating the rental ecosystem. Features user registration, dashboard panels, and listing review controls.
+          </p>
+          <ul class="project-features">
+            <li>Session Token Authentication</li>
+            <li>CRUD listing database controls</li>
+            <li>Map APIs &amp; Image uploads</li>
+          </ul>
+          <div class="project-tech">
+            <span class="tag">MongoDB</span>
+            <span class="tag">ExpressJS</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Bootstrap</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/sudheersharma7906-design/Airbnb" target="_blank" class="project-link">
+              <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3: Real-Time Chat App -->
+        <div class="project-card glass-card">
+          <div class="project-icon">💬</div>
+          <h3>Real-Time Chat App</h3>
+          <p>
+            An active socket connection chat client supporting private channels, typing notifications, and historical chat storage.
+          </p>
+          <ul class="project-features">
+            <li>Socket.io duplex sockets</li>
+            <li>Secure session tokens (JWT)</li>
+            <li>MongoDB logs storage</li>
+          </ul>
+          <div class="project-tech">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Socket.io</span>
+            <span class="tag">MongoDB</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/sudheersharma7906-design/realtime-chat-app" target="_blank" class="project-link">
+              <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 4: Snake Game -->
+        <div class="project-card glass-card">
+          <div class="project-icon">🐍</div>
+          <h3>Classic Snake Game</h3>
+          <p>
+            An online recreation of the arcade classic utilizing HTML5 Canvas APIs, rendering coordinates and velocities with JavaScript event binders.
+          </p>
+          <ul class="project-features">
+            <li>Classic arcade control logic</li>
+            <li>Real-time score counters</li>
+            <li>Collision vectors detection</li>
+          </ul>
+          <div class="project-tech">
+            <span class="tag">HTML5 Canvas</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="http://github.com/sudheersharma7906-design/Snake-Game" target="_blank" class="project-link">
+              <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 5: Weather App -->
+        <div class="project-card glass-card">
+          <div class="project-icon">⛅</div>
+          <h3>Real-Time Weather App</h3>
+          <p>
+            An interface integrating external REST weather APIs, fetching current conditions, forecasts, and geographical statistics dynamically.
+          </p>
+          <ul class="project-features">
+            <li>Dynamic API integrations</li>
+            <li>Detailed 5-day forecasts</li>
+            <li>Locational searching engine</li>
+          </ul>
+          <div class="project-tech">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Weather API</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/sudheersharma7906-design/Weather-App" target="_blank" class="project-link">
+              <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="reveal">
+      <h2 class="section-title">Credentials &amp; <span>Certifications</span></h2>
+      <div class="timeline">
+        
+        <!-- Deloitte -->
+        <div class="timeline-item">
+          <div class="timeline-badge"></div>
+          <div class="glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Data Analytics &amp; Forensics Certificate</h3>
+                <div class="timeline-org">Deloitte (via Forage)</div>
+              </div>
+              <div class="timeline-date">June 23rd, 2026</div>
+            </div>
+            <div class="timeline-content">
+              <p>
+                Completed simulated practical tasks covering forensic technology logs, transaction audits, data integrity extraction, and client recommendations.
+              </p>
+              <button class="btn-view-cert" data-cert="deloitte" id="certBtnDeloitte">
+                <span>View Certificate Details</span>
+                <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- KnowledgeGate NodeJS -->
+        <div class="timeline-item">
+          <div class="timeline-badge"></div>
+          <div class="glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">NodeJS + ExpressJs + MongoDB Course</h3>
+                <div class="timeline-org">KnowledgeGate Course Certification</div>
+              </div>
+              <div class="timeline-date">June 5th, 2026</div>
+            </div>
+            <div class="timeline-content">
+              <p>
+                Completed backend curriculum with a final exam score of <span class="highlight-text">98%</span>. Covered MVC route maps, database operations, JWT authentication, and index tuning.
+              </p>
+              <button class="btn-view-cert" data-cert="knowledgegate" id="certBtnKg">
+                <span>View Certificate Details</span>
+                <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Coding Profiles Section -->
+    <section id="profiles" class="reveal">
+      <h2 class="section-title">Professional &amp; Coding <span>Profiles</span></h2>
+      <div class="profiles-grid">
+        
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/sudheer-sharma-a31794282" target="_blank" class="profile-card glass-card" id="liCard">
+          <div class="profile-icon">💼</div>
+          <div class="profile-name">LinkedIn</div>
+          <div class="profile-stat">Connect Digitally</div>
+        </a>
+
+        <!-- LeetCode -->
+        <a href="https://leetcode.com/u/sudheer9794/" target="_blank" class="profile-card glass-card" id="lcCard">
+          <div class="profile-icon">⚡</div>
+          <div class="profile-name">LeetCode</div>
+          <div class="profile-stat">Solved 300+ Problems</div>
+        </a>
+
+        <!-- GitHub -->
+        <a href="https://github.com/sudheersharma7906-design" target="_blank" class="profile-card glass-card" id="ghCard">
+          <div class="profile-icon">🐙</div>
+          <div class="profile-name">GitHub</div>
+          <div class="profile-stat">10+ Active Repos</div>
+        </a>
+
+        <!-- CodeChef -->
+        <a href="#" target="_blank" class="profile-card glass-card" id="ccCard">
+          <div class="profile-icon">👨‍🍳</div>
+          <div class="profile-name">CodeChef</div>
+          <div class="profile-stat">Star Rated Developer</div>
+        </a>
+
+        <!-- HackerRank -->
+        <a href="#" target="_blank" class="profile-card glass-card" id="hrCard">
+          <div class="profile-icon">🎯</div>
+          <div class="profile-name">HackerRank</div>
+          <div class="profile-stat">Verified Problem Solver</div>
+        </a>
+
+        <!-- GeeksforGeeks -->
+        <a href="#" target="_blank" class="profile-card glass-card" id="gfgCard">
+          <div class="profile-icon">🧠</div>
+          <div class="profile-name">GeeksforGeeks</div>
+          <div class="profile-stat">DSA Solutions Contributor</div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- GitHub Stats Integration Section -->
+    <section id="github" class="reveal">
+      <h2 class="section-title">GitHub <span>Contributions</span></h2>
+      <div class="github-stats-container">
+        
+        <!-- Stats cards row -->
+        <div class="github-stats-row">
+          <div class="github-stats-card">
+            <img src="https://github-readme-stats.vercel.app/api?username=sudheersharma7906-design&show_icons=true&theme=transparent&title_color=06b6d4&text_color=9ca3af&icon_color=6366f1&hide_border=false&border_color=3b82f6" alt="Sudheer's GitHub Stats" />
+          </div>
+          <div class="github-stats-card">
+            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sudheersharma7906-design&layout=compact&theme=transparent&title_color=06b6d4&text_color=9ca3af&hide_border=false&border_color=3b82f6" alt="Sudheer's Top Languages" />
+          </div>
+        </div>
+        
+        <!-- Contribution streak card -->
+        <div class="github-contrib-card">
+          <img src="https://github-readme-streak-stats.herokuapp.com/?user=sudheersharma7906-design&theme=transparent&hide_border=false&border_color=3b82f6&ring=6366f1&fire=06b6d4&currStreakNum=06b6d4&sideNums=9ca3af&sideLabels=9ca3af" alt="Sudheer's Contribution Streak" />
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="reveal">
+      <h2 class="section-title">Get In <span>Touch</span></h2>
+      <div class="contact-container">
+        
+        <div class="contact-info">
+          <div class="contact-heading">
+            <h3>Let's Connect</h3>
+            <p>
+              I am open to discussing software developer internships, full-stack web projects, or copywriting alignments. Feel free to contact me.
+            </p>
+          </div>
+          
+          <div class="contact-details">
+            <!-- Email -->
+            <div class="contact-method">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              </div>
+              <div>
+                <div class="contact-label">Email</div>
+                <a href="mailto:sudheersharma7906@gmail.com" class="contact-value" id="emailContact">sudheersharma7906@gmail.com</a>
+              </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="contact-method">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              </div>
+              <div>
+                <div class="contact-label">Phone</div>
+                <a href="tel:+919616290104" class="contact-value" id="phoneContact">+91 9616290104</a>
+              </div>
+            </div>
+
+            <!-- Location -->
+            <div class="contact-method">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              </div>
+              <div>
+                <div class="contact-label">Location</div>
+                <div class="contact-value">Uttar Pradesh, India</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/sudheer-sharma-a31794282" target="_blank" class="social-btn" aria-label="LinkedIn" id="linkedinSocial">
+              <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="https://github.com/sudheersharma7906-design" target="_blank" class="social-btn" aria-label="GitHub" id="githubSocial">
+              <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <form class="contact-form glass-card" id="contactForm">
+            <div id="formStatus" class="form-status"></div>
+            <div class="form-group">
+              <label for="formName">Name</label>
+              <input type="text" id="formName" class="form-input" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <label for="formEmail">Email</label>
+              <input type="email" id="formEmail" class="form-input" placeholder="your.email@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="formSubject">Subject</label>
+              <input type="text" id="formSubject" class="form-input" placeholder="Collaboration / Inquiries" required />
+            </div>
+            <div class="form-group">
+              <label for="formMessage">Message</label>
+              <textarea id="formMessage" class="form-input" placeholder="Your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id="btnSubmitContact">Send Message</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Certificate Modal Container -->
+    <div id="certModal" class="cert-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-container">
+        <div class="modal-header">
+          <h3 class="modal-title" id="modalTitle">Certificate</h3>
+          <button class="btn-close-modal" aria-label="Close modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="cert-view-container" id="certViewContainer"></div>
+          <div class="cert-meta-info" id="certMetaInfo">
+            <h4>Verified Competencies:</h4>
+            <ul></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 Sudheer Sharma. All rights reserved.</p>
+      <div class="footer-nav">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certificates</a>
+      </div>
+    </footer>
+
+    <!-- Main Module Script -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
