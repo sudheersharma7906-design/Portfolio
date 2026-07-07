@@ -375,7 +375,7 @@ document.addEventListener('DOMContentLoaded', () => {
     certMetaList.innerHTML = data.details.map(detail => `<li>${detail}</li>`).join('');
   }
 
-  // 7. Contact Form Handler (Simulated)
+  // 7. Contact Form Handler (Web3Forms)
   const contactForm = document.getElementById('contactForm');
   const formStatus = document.getElementById('formStatus');
 
@@ -389,18 +389,45 @@ document.addEventListener('DOMContentLoaded', () => {
       submitBtn.disabled = true;
       submitBtn.textContent = 'Sending Message...';
       
-      setTimeout(() => {
+      // Reset status display
+      formStatus.style.display = 'none';
+      formStatus.className = 'form-status';
+      formStatus.textContent = '';
+      
+      const formData = new FormData(contactForm);
+      
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData
+      })
+      .then(async (response) => {
+        const json = await response.json();
+        if (response.status === 200) {
+          formStatus.className = 'form-status success';
+          formStatus.style.display = 'block';
+          formStatus.textContent = 'Thank you, Sudheer will get back to you shortly!';
+          contactForm.reset();
+        } else {
+          console.error(json);
+          formStatus.className = 'form-status error';
+          formStatus.style.display = 'block';
+          formStatus.textContent = json.message || 'Something went wrong. Please try again.';
+        }
+      })
+      .catch((error) => {
+        console.error(error);
+        formStatus.className = 'form-status error';
+        formStatus.style.display = 'block';
+        formStatus.textContent = 'Something went wrong. Please try again.';
+      })
+      .then(() => {
         submitBtn.disabled = false;
         submitBtn.textContent = originalText;
         
-        formStatus.className = 'form-status success';
-        formStatus.textContent = 'Thank you, Sudheer will get back to you shortly!';
-        contactForm.reset();
-        
         setTimeout(() => {
           formStatus.style.display = 'none';
-        }, 5000);
-      }, 1500);
+        }, 6000);
+      });
     });
   }
 });

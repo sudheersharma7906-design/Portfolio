@@ -717,22 +717,24 @@
 
         <div>
           <form class="contact-form glass-card" id="contactForm">
+            <input type="hidden" name="access_key" value="eba0f988-7e4a-4c4a-8489-14e5f479bee4" />
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;" />
             <div id="formStatus" class="form-status"></div>
             <div class="form-group">
               <label for="formName">Name</label>
-              <input type="text" id="formName" class="form-input" placeholder="Your Name" required />
+              <input type="text" id="formName" name="name" class="form-input" placeholder="Your Name" required />
             </div>
             <div class="form-group">
               <label for="formEmail">Email</label>
-              <input type="email" id="formEmail" class="form-input" placeholder="your.email@example.com" required />
+              <input type="email" id="formEmail" name="email" class="form-input" placeholder="your.email@example.com" required />
             </div>
             <div class="form-group">
               <label for="formSubject">Subject</label>
-              <input type="text" id="formSubject" class="form-input" placeholder="Collaboration / Inquiries" required />
+              <input type="text" id="formSubject" name="subject" class="form-input" placeholder="Collaboration / Inquiries" required />
             </div>
             <div class="form-group">
               <label for="formMessage">Message</label>
-              <textarea id="formMessage" class="form-input" placeholder="Your message here..." required></textarea>
+              <textarea id="formMessage" name="message" class="form-input" placeholder="Your message here..." required></textarea>
             </div>
             <button type="submit" class="btn btn-primary" id="btnSubmitContact">Send Message</button>
           </form>
