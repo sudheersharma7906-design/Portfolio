@@ -13,7 +13,7 @@ const certificateData = {
     logoColor: "#86efac",
     logoText: "#000000",
     themeColor: "#10b981",
-    file: "/documents/Delotile data anlyst_completion_certificate.pdf",
+    file: "./documents/deloitte_data_analytics.pdf",
     details: [
       "Conducted data analysis and forensic technology simulations mimicking real-world advisory projects.",
       "Performed data extraction, validation, and analytical calculations to investigate data integrity anomalies.",
@@ -32,7 +32,7 @@ const certificateData = {
     logoColor: "#f97316",
     logoText: "#ffffff",
     themeColor: "#f97316",
-    file: "/documents/NodeJs + ExpressJs + MongoDB.pdf",
+    file: "./documents/nodejs_express_mongodb.pdf",
     details: [
       "Mastered backend web development technologies including Node.js runtime environment.",
       "Designed and built RESTful web APIs using Express.js middleware.",
@@ -51,7 +51,7 @@ const certificateData = {
     logoColor: "#1d4ed8",
     logoText: "#ffffff",
     themeColor: "#3b82f6",
-    file: "/documents/Tata job internship.pdf",
+    file: "./documents/tata_job_internship.pdf",
     details: [
       "Conducted exploratory data analysis (EDA) and built risk profiles for customer delinquency portfolios.",
       "Created predictive classification models utilizing AI algorithms to forecast payment delinquency.",
@@ -69,7 +69,7 @@ const certificateData = {
     logoColor: "#8b5cf6",
     logoText: "#ffffff",
     themeColor: "#8b5cf6",
-    file: "/documents/completion certificate.jpg",
+    file: "./documents/completion_certificate.jpg",
     details: [
       "Completed a content writing and copywriting internship from March 24, 2026, to April 7, 2026.",
       "Drafted high-quality web articles, SEO-focused copy, and social media announcements.",
@@ -87,7 +87,7 @@ const certificateData = {
     logoColor: "#0ea5e9",
     logoText: "#ffffff",
     themeColor: "#0ea5e9",
-    file: "/documents/certificate of selection.jpg",
+    file: "./documents/certificate_of_selection.jpg",
     details: [
       "Formally selected from Galgotias College Of Engineering And Technology for a Copywriting Internship.",
       "Vetted through competitive application tests matching copywriting requirements.",
